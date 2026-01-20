@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oku - Tell your story.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            atbg: '#faf9f6',
+            atpanel: '#f1e9dc',
+            atink: '#0f0e0d',
+            atmuted: '#64635f',
+            ataccent: '#c35b3d'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#faf9f6] text-[#151514] antialiased">
+  <header class="border-b border-black/5 bg-transparent backdrop-blur">
+    <nav class="flex items-center justify-between gap-3 max-w-5xl mx-auto px-5 py-4">
+      <div style="font-family: 'Source Serif 4','Georgia',serif" class="flex items-center gap-3 text-[#0f0e0d] font-bold text-lg tracking-tight">
+        <!-- <img src="./images/Icon-iOS-Default-64x64@2x.png" alt="Oku" class="w-7 h-7 rounded-lg object-cover" /> -->
+      oku.
+      </div>
+      <div class="hidden sm:flex items-center gap-2 text-[#64635f] font-semibold text-sm">
+        <!-- <a class="hover:text-[#0f0e0d]" href="#features">Features</a>
+        <a class="hover:text-[#0f0e0d]" href="#screens">Screenshots</a> -->
+        <a class="hover:text-[#0f0e0d]" href="#faq">FAQ</a>
+        <a class="hover:text-[#0f0e0d]" href="support.html">Support</a>
+        <a class="bg-[#151514] text-white px-4 py-2 rounded-xl font-semibold text-xs inline-flex items-center gap-2" href="#download" id="downloadTop">Try <b>Oku</b></a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-5 py-28">
+    <section class="text-center py-10">
+      <div class="inline-flex gap-2 items-center px-2.5 py-1.5 rounded-full bg-[#0279FD] text-white font-semibold text-[11px]">Coming soon · iOS & iPadOS</div>
+      <h1 style="font-family: 'Source Serif 4','Georgia',serif" class="text-[clamp(40px,6vw,64px)] leading-[1.1] text-[#151514] font-semibold tracking-[-0.01em] mt-16 mb-4">Tell your story.</h1>
+      <p class="max-w-3xl mx-auto text-[#64635f] text-lg mb-4">Type it. Speak it. <b>Oku</b> keeps your words moving—however they come. A distraction-free writing app with built-in voice recording and transcription.</p>
+      <div class="flex flex-wrap justify-center items-center gap-3 mt-0 pb-12" id="download">
+        <a class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-[#d7cbbd] text-[#4d4337] text-base font-semibold" href="#" id="appStoreCta" aria-label="Get on the App Store">
+          <svg viewBox="0 0 14 17" fill="currentColor" aria-hidden="true" class="w-4 h-4">
+            <path d="M13.25 13.2c-.23.52-.5 1-.83 1.45-.43.61-.78 1.03-1.05 1.25-.42.39-.88.59-1.37.6-.35 0-.77-.1-1.27-.3-.5-.2-.95-.3-1.35-.3-.43 0-.9.1-1.42.3-.52.21-.94.31-1.27.32-.48.02-.95-.19-1.4-.63-.3-.26-.67-.7-1.1-1.33-.47-.7-.85-1.52-1.14-2.45-.32-1-.48-1.97-.48-2.91 0-1.07.23-1.99.68-2.75.35-.6.82-1.07 1.4-1.42.58-.35 1.2-.53 1.84-.54.36 0 .83.12 1.41.34.58.23.95.35 1.1.35.12 0 .52-.13 1.19-.39.64-.23 1.18-.33 1.63-.31 1.2.1 2.1.57 2.69 1.43-1.07.65-1.6 1.56-1.6 2.75 0 .92.34 1.69 1.02 2.32.31.3.65.53 1.02.68-.08.23-.16.46-.26.68Z"/>
+            <path d="M9.56 1.74c0 .8-.29 1.54-.87 2.22-.7.82-1.55 1.3-2.46 1.23a2.6 2.6 0 0 1-.02-.31c0-.77.33-1.6.9-2.25.28-.33.63-.6 1.05-.83.42-.23.83-.35 1.23-.37.12.1.12.2.17.31Z"/>
+          </svg>
+          macOS
+        </a>
+        <!-- <a class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-black/10 bg-white text-[#0f0e0d] text-sm font-semibold" href="#newsletter">Reserve your launch spot</a> -->
+      </div>
+      <div class="mt-9 max-w-4xl mx-auto rounded-2xl overflow-hidden border border-black/5 bg-[#f1e9dc]">
+        <div class="relative">
+          <img id="heroSlide" class="w-full block" src="./images/app%20screenshots/Frame%202.png" alt="App screen 1">
+          <div class="absolute inset-0 flex items-center justify-between px-3 pointer-events-none">
+            <button aria-label="Previous" data-dir="-1" class="hidden pointer-events-auto bg-white/85 text-[#151514] rounded-full w-9 h-9 flex items-center justify-center shadow-sm border border-black/10">‹</button>
+            <button aria-label="Next" data-dir="1" class="hidden pointer-events-auto bg-white/85 text-[#151514] rounded-full w-9 h-9 flex items-center justify-center shadow-sm border border-black/10">›</button>
+          </div>
+          <div id="heroDots" class="absolute bottom-3 inset-x-0 flex justify-center gap-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <h2 class="text-center text-2xl sm:text-[28px] text-[#0f0e0d] font-semibold mt-14 mb-6" id="features">Why you'll love it</h2> -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-none border-black/5 rounded-[18px] overflow-hidden max-w-5xl mx-auto px-12 mt-24">
+      <div class="p-5 border-black/5 sm:border-r">
+        <h3 style="font-family: 'Source Serif 4','Georgia',serif" class="text-base font-semibold mb-2">No distractions</h3>
+        <p class="text-[#64635f] text-xs m-0">A clean space to stay with the idea—no feeds, no badges. Focused drafting with only the words you want to see.</p>
+      </div>
+      <div class="p-5 border-t sm:border-t-0 border-black/5 sm:border-r">
+        <h3 style="font-family: 'Source Serif 4','Georgia',serif" class="text-base font-semibold mb-2">Voice, captured</h3>
+        <p class="text-[#64635f] text-xs m-0">Record your thoughts as you speak. Get a clean transcript you can reread—or listen back to with the tone intact.</p>
+      </div>
+      <div class="p-5 border-r border-black/5 sm:border-r">
+        <h3 style="font-family: 'Source Serif 4','Georgia',serif" class="text-base font-semibold mb-2">A flexible writing flow</h3>
+        <p class="text-[#64635f] text-xs m-0">Scenes, chapters, or fragments—organize your work the way you think.</p>
+      </div>
+      <div class="p-5 border-none border-black/5">
+        <h3 style="font-family: 'Source Serif 4','Georgia',serif" class="text-base font-semibold mb-2">Yours to keep</h3>
+        <p class="text-[#64635f] text-xs m-0">Export your writing anytime.</p>
+      </div>
+    </div>
+
+    <!-- <h2 class="text-center text-2xl sm:text-[28px] text-[#0f0e0d] font-semibold mt-16 mb-6" id="screens">Real App Store screenshots</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="bg-gradient-to-br from-[#f6ecdd] to-[#f0dfc7] border border-black/5 rounded-[18px] p-3">
+        <img class="w-full rounded-xl bg-white" src="https://via.placeholder.com/1242x2688/ffffff/d1c3b4?text=Screenshot+1" alt="Story map screenshot">
+        <div class="mt-2 text-center font-semibold text-[#64635f]">Story map</div>
+      </div>
+      <div class="bg-gradient-to-br from-[#f6ecdd] to-[#f0dfc7] border border-black/5 rounded-[18px] p-3">
+        <img class="w-full rounded-xl bg-white" src="https://via.placeholder.com/1242x2688/ffffff/d1c3b4?text=Screenshot+2" alt="Choices UI screenshot">
+        <div class="mt-2 text-center font-semibold text-[#64635f]">Choices UI</div>
+      </div>
+      <div class="bg-gradient-to-br from-[#f6ecdd] to-[#f0dfc7] border border-black/5 rounded-[18px] p-3">
+        <img class="w-full rounded-xl bg-white" src="https://via.placeholder.com/1242x2688/ffffff/d1c3b4?text=Screenshot+3" alt="Ending recap screenshot">
+        <div class="mt-2 text-center font-semibold text-[#64635f]">Ending recap</div>
+      </div>
+      <div class="bg-gradient-to-br from-[#f6ecdd] to-[#f0dfc7] border border-black/5 rounded-[18px] p-3">
+        <img class="w-full rounded-xl bg-white" src="https://via.placeholder.com/1242x2688/ffffff/d1c3b4?text=Screenshot+4" alt="Library screenshot">
+        <div class="mt-2 text-center font-semibold text-[#64635f]">Library</div>
+      </div>
+    </div> -->
+
+
+    <h1 style="font-family: 'Source Serif 4','Georgia',serif" class="text-[clamp(40px,6vw,64px)] leading-[1.1] text-[#151514] font-semibold tracking-[-0.01em] mt-32 mb-16 text-center">Try it today!</h1>
+    <div class="flex flex-wrap justify-center gap-8 sm:gap-10 my-16 ">
+        
+      <div class="text-center mx-auto border border-black/5 rounded-[18px] p-4 bg-white mb-32">
+        <img class="w-36 h-36 rounded-xl bg-white mx-auto" src="./images/QR_placeholder.png" alt="QR code for ATWH macOS download">
+        <div class="mt-3 text-[#64635f] font-semibold text-base">Download macOS app</div>
+      </div>
+      <!-- <div class="text-center">
+        <img class="w-36 h-36 rounded-xl bg-white" src="https://via.placeholder.com/220x220/ffffff/d1c3b4?text=QR+iPadOS" alt="QR for iPadOS">
+        <div class="mt-3 text-[#64635f] font-semibold">Scan for iPadOS</div>
+      </div> -->
+    </div>
+
+    <section class="max-w-3xl mx-auto" id="faq">
+      <h1 style="font-family: 'Source Serif 4','Georgia',serif" class="text-[clamp(40px,6vw,64px)] leading-[1.1] text-[#151514] font-semibold tracking-[-0.01em] mt-16 mb-16 text-center">FAQ</h1>
+      <style>#faq summary::-webkit-details-marker{display:none;} #faq summary{list-style:none;}</style>
+      <div class="border-y border-black/5 overflow-hidden">
+        <details class="border-b border-black/5 px-4 py-6" open>
+          <summary style="list-style: none;" class="flex items-start justify-between gap-3 cursor-pointer">
+            <span style="font-family: 'Source Serif 4','Georgia',serif" class="text-xl font-thin text-[#0f0e0d]">When does Oku launch?</span>
+            <span class="faq-toggle text-3xl  font-thin  text-[#0f0e0d]">–</span>
+          </summary>
+          <p class="text-[#64635f] mt-2">We're finalizing the first anthology now. Join the newsletter to be notified the moment it drops.</p>
+        </details>
+        <details class="border-b border-black/5 px-4 py-6">
+          <summary style="list-style: none;" class="flex items-start justify-between gap-3 cursor-pointer">
+            <span style="font-family: 'Source Serif 4','Georgia',serif" class="text-xl font-thin text-[#0f0e0d]">Will my choices sync across devices?</span>
+            <span class="faq-toggle text-3xl  font-thin  text-[#0f0e0d]">+</span>
+          </summary>
+          <p class="text-[#64635f] mt-2">Yes. Sign in with iCloud to sync paths, bookmarks, and endings.</p>
+        </details>
+        <details class="border-b border-black/5 px-4 py-6">
+          <summary style="list-style: none;" class="flex items-start justify-between gap-3 cursor-pointer">
+            <span style="font-family: 'Source Serif 4','Georgia',serif" class="text-xl font-thin text-[#0f0e0d]">Is there a free trial?</span>
+            <span class="faq-toggle text-3xl  font-thin  text-[#0f0e0d]">+</span>
+          </summary>
+          <p class="text-[#64635f] mt-2">You can explore the prologue and first chapter free. Additional arcs are available via one-time purchase or membership.</p>
+        </details>
+        <details class="px-4 py-6">
+          <summary style="list-style: none;" class="flex items-start justify-between gap-3 cursor-pointer">
+            <span style="font-family: 'Source Serif 4','Georgia',serif" class="text-xl font-thin text-[#0f0e0d]">Do you support offline play?</span>
+            <span class="faq-toggle text-3xl  font-thin text-[#0f0e0d]">+</span>
+          </summary>
+          <p class="text-[#64635f] mt-2">Download chapters to play without a connection. Progress syncs once you're back online.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- <section class="max-w-3xl mx-auto mt-16 bg-white border border-black/5 rounded-2xl text-center p-6" id="newsletter">
+      <h3 class="text-2xl font-semibold text-[#0f0e0d] mb-2">Reserve your seat</h3>
+      <p class="text-[#64635f] mb-4">Get launch news, early access slots, and bonus endings straight to your inbox.</p>
+      <form id="newsletterForm" class="flex flex-wrap gap-3 justify-center">
+        <input class="px-3 py-3 rounded-xl border border-black/10 min-w-[240px] text-[15px] outline-none" type="email" name="email" placeholder="you@example.com" required />
+        <button class="bg-[#c35b3d] text-white px-4 py-3 rounded-xl font-semibold text-sm" type="submit">Join the newsletter</button>
+      </form>
+      <div class="text-sm text-[#64635f] mt-2" id="newsletterStatus"></div>
+    </section> -->
+  </main>
+
+  <footer class="bg-[#15110f] text-[#f5ede4] mt-24 px-5 py-10">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div>
+        <div style="font-family: 'Source Serif 4','Georgia',serif" class="flex items-center gap-3 font-bold text-2xl">
+            <!-- <img src="./images/Icon-iOS-Default-64x64@2x.png" alt="Oku" class="w-7 h-7 rounded-lg object-cover" />  -->
+            Oku</div>
+        <small class="text-[#c2b6a9] block mt-1">Tell your Story.</small>
+      </div>
+      <div class="space-y-1 text-xs">
+        <strong class="block">Product</strong>
+        <a class="block" href="#features">Features</a>
+        <a class="block" href="#screens">Screenshots</a>
+        <a class="block" href="#faq">FAQ</a>
+      </div>
+      <div class="space-y-1 text-xs">
+        <strong class="block">Company</strong>
+        <a class="block" href="support.html">Support</a>
+        <a class="block" href="#">Privacy</a>
+        <a class="block" href="#">Terms</a>
+      </div>
+      <div class="space-y-1 text-xs">
+        <strong class="block">Connect</strong>
+        <a class="block" href="mailto:hello@atwh.app">hello@atwh.app</a>
+        <a class="block" href="#newsletter">Newsletter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple UTM propagation
+    (function() {
+      const params = new URLSearchParams(window.location.search);
+      const utm = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
+      const collected = {};
+      let hasUtm = false;
+      utm.forEach(key => {
+        if (params.get(key)) { collected[key] = params.get(key); hasUtm = true; }
+      });
+      function appendUTM(url) {
+        if (!hasUtm || !url) return url;
+        const u = new URL(url, window.location.origin);
+        Object.entries(collected).forEach(([k,v]) => u.searchParams.set(k,v));
+        return u.toString();
+      }
+      const appStore = document.getElementById('appStoreCta');
+      if (appStore) {
+        const target = 'https://apps.apple.com';
+        appStore.href = appendUTM(target);
+      }
+      document.querySelectorAll('a').forEach(a => {
+        if (a.dataset && a.dataset.track !== 'skip' && a.href.startsWith('http')) {
+          a.href = appendUTM(a.href);
+        }
+      });
+    })();
+
+    // Newsletter stub handler
+    const form = document.getElementById('newsletterForm');
+    const statusEl = document.getElementById('newsletterStatus');
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = new FormData(form).get('email');
+        statusEl.textContent = 'Thanks! You\'re on the list.';
+        statusEl.style.color = 'green';
+        console.log('Newsletter signup', { email, ts: Date.now() });
+      });
+    }
+
+    // Basic analytics hook placeholder
+    window.analyticsQueue = window.analyticsQueue || [];
+    function track(event, data) {
+      window.analyticsQueue.push({ event, data, at: Date.now() });
+      console.log('track', event, data);
+    }
+    track('page_view', { page: 'landing' });
+
+    // Hero screenshot slider
+    (function() {
+      const images = [
+        './images/app%20screenshots/Frame%202.png',
+        './images/app%20screenshots/Frame%206.png',
+        './images/app%20screenshots/Frame%207.png',
+        './images/app%20screenshots/Frame%208.png',
+        './images/app%20screenshots/Frame%209.png'
+      ];
+      const imgEl = document.getElementById('heroSlide');
+      const dotsEl = document.getElementById('heroDots');
+      const buttons = document.querySelectorAll('[data-dir]');
+      if (!imgEl || !dotsEl || !buttons.length) return;
+
+      let idx = 0;
+      const setSlide = (i) => {
+        idx = (i + images.length) % images.length;
+        imgEl.src = images[idx];
+        Array.from(dotsEl.children).forEach((dot, di) => {
+          dot.className = di === idx
+            ? 'w-6 h-2.5 rounded-full bg-[#151514] transition-all duration-200'
+            : 'w-2.5 h-2.5 rounded-full bg-[#d7cbbd] transition-all duration-200';
+        });
+      };
+
+      images.forEach((_, i) => {
+        const d = document.createElement('button');
+        d.className = i === 0
+          ? 'w-6 h-2.5 rounded-full bg-[#151514] transition-all duration-200'
+          : 'w-2.5 h-2.5 rounded-full bg-[#d7cbbd] transition-all duration-200';
+        d.setAttribute('aria-label', `Go to slide ${i + 1}`);
+        d.addEventListener('click', () => setSlide(i));
+        dotsEl.appendChild(d);
+      });
+
+      buttons.forEach(btn => btn.addEventListener('click', () => {
+        const dir = Number(btn.dataset.dir || 0);
+        setSlide(idx + dir);
+      }));
+
+      let timer = setInterval(() => setSlide(idx + 1), 6500);
+      const resetTimer = () => { clearInterval(timer); timer = setInterval(() => setSlide(idx + 1), 6500); };
+      buttons.forEach(btn => btn.addEventListener('click', resetTimer));
+      dotsEl.addEventListener('click', resetTimer);
+    })();
+
+    // FAQ plus/minus toggles
+    (function() {
+      const faqs = document.querySelectorAll('#faq details');
+      if (!faqs.length) return;
+      const update = (detail) => {
+        const toggle = detail.querySelector('.faq-toggle');
+        if (toggle) toggle.textContent = detail.open ? '–' : '+';
+      };
+      faqs.forEach((d) => {
+        update(d);
+        d.addEventListener('toggle', () => update(d));
+      });
+    })();
+  </script>
+</body>
+</html>
